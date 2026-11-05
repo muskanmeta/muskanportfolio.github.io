@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Muskan Chauhan – Game Developer</title>
+<meta name="description" content="Game developer. Mechanics, gameplay systems, game feel and tech art for mobile games, guided by player data.">
+<meta property="og:title" content="Muskan Chauhan – Game Developer">
+<meta property="og:description" content="Game developer. Reel, game breakdowns and resume.">
+<meta property="og:image" content="assets/reel-poster.jpg">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#100D22">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23100D22'/%3E%3Ctext x='32' y='44' font-family='Arial Black,Arial' font-weight='900' font-size='34' text-anchor='middle' fill='%2319E6FF'%3EM%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#100D22; --bg-2:#171330; --ink:#F1EEFF; --muted:#ABA6C9; --line:#2B2650;
+  --brand:#19E6FF; --brand-ink:#061018;
+  --radius-media:22px;
+  --measure:66ch;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 Inter,system-ui,-apple-system,"Segoe UI",sans-serif;
+  background-image:radial-gradient(1200px 600px at 80% -10%,#2a1f63 0%,transparent 60%),radial-gradient(900px 500px at -10% 30%,#15204a 0%,transparent 55%);
+  background-repeat:no-repeat}
+img,video{display:block;max-width:100%}
+a{color:var(--ink);text-decoration-color:color-mix(in srgb,var(--brand) 70%,transparent);text-underline-offset:3px}
+a:hover{text-decoration-color:var(--brand)}
+:focus-visible{outline:3px solid var(--brand);outline-offset:3px;border-radius:6px}
+.wrap{width:min(1180px,100% - 32px);margin-inline:auto}
+.skip{position:absolute;left:-999px;top:8px;background:var(--brand);color:var(--brand-ink);padding:8px 14px;border-radius:8px;font-weight:600;z-index:10}
+.skip:focus{left:16px}
+
+/* nav */
+.nav{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 0}
+.nav .mark{font-weight:900;letter-spacing:-.02em;text-decoration:none;font-size:18px}
+.nav ul{list-style:none;display:flex;gap:22px;margin:0;padding:0;font-size:15px;color:var(--muted)}
+.nav ul a{text-decoration:none;color:var(--muted)}
+.nav ul a:hover{color:var(--ink)}
+
+/* hero */
+.hero{padding:12px 0 40px}
+.reel{position:relative;border-radius:var(--radius-media);overflow:hidden;background:#000;
+  box-shadow:0 30px 120px -30px rgba(25,230,255,.35),0 0 0 1px rgba(255,255,255,.06)}
+.reel video{width:100%;aspect-ratio:16/9;object-fit:cover}
+.reel.vertical{max-width:420px;margin-inline:auto}
+.reel.vertical video{aspect-ratio:9/16}
+.hero h1{font-weight:900;font-size:clamp(46px,10.6vw,146px);line-height:.9;letter-spacing:-.045em;margin:18px 0 0 -.04em;white-space:nowrap}
+.hero-row{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:40px;align-items:end;margin:26px 0 36px}
+.hero .lede{font-size:clamp(19px,2.1vw,24px);line-height:1.45;margin:0;max-width:34ch;color:var(--ink)}
+.hero .lede span{color:var(--muted)}
+.actions{display:flex;flex-wrap:wrap;gap:10px;justify-content:flex-end}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 18px;border-radius:999px;font-weight:600;font-size:15px;text-decoration:none;
+  border:1px solid var(--line);background:rgba(255,255,255,.03);color:var(--ink)}
+.btn:hover{border-color:#4a4380;background:rgba(255,255,255,.06)}
+.btn.primary{background:var(--brand);color:var(--brand-ink);border-color:var(--brand)}
+.btn.primary:hover{background:#6ff0ff}
+
+/* sections */
+section{padding:72px 0}
+.sec-head{max-width:var(--measure);margin-bottom:40px}
+h2{font-weight:900;font-size:clamp(34px,5vw,56px);line-height:1;letter-spacing:-.035em;margin:0 0 14px}
+.sec-head p{color:var(--muted);margin:0;font-size:18px}
+
+/* games */
+.games{display:flex;flex-direction:column;gap:28px}
+.game{--accent:var(--brand);display:grid;grid-template-columns:300px minmax(0,1fr);gap:44px;align-items:center;
+  padding:28px;border-radius:28px;background:linear-gradient(180deg,rgba(255,255,255,.035),rgba(255,255,255,.01));
+  border:1px solid var(--line);position:relative}
+.game.wide{grid-template-columns:minmax(0,1.25fr) minmax(0,1fr)}
+.game::before{content:"";position:absolute;inset:-1px;border-radius:inherit;pointer-events:none;
+  background:radial-gradient(500px 260px at 0% 50%,color-mix(in srgb,var(--accent) 16%,transparent),transparent 70%)}
+.media{position:relative;border-radius:var(--radius-media);overflow:hidden;background:#000;
+  box-shadow:0 20px 70px -20px color-mix(in srgb,var(--accent) 55%,transparent),0 0 0 1px rgba(255,255,255,.08)}
+.game:not(.wide) .media{aspect-ratio:480/1010;max-height:620px}
+.game.wide .media{aspect-ratio:960/420}
+.media video,.media img{width:100%;height:100%;object-fit:cover}
+.info{position:relative;max-width:var(--measure)}
+.game h3{font-weight:900;font-size:clamp(30px,3.6vw,44px);line-height:1;letter-spacing:-.03em;margin:0 0 8px}
+.kind{color:var(--muted);margin:0 0 18px;font-size:16px}
+.role{margin:0 0 16px;font-weight:600;padding-left:14px;border-left:4px solid var(--accent)}
+.game ul.points{margin:0 0 20px;padding-left:20px}
+.game ul.points li{margin:0 0 8px}
+.game ul.points li::marker{color:var(--accent)}
+.tools{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:8px}
+.tools li{font-size:13.5px;font-weight:500;padding:5px 11px;border-radius:999px;border:1px solid color-mix(in srgb,var(--accent) 45%,var(--line));color:#DCD8F5}
+.links{margin:18px 0 0;display:flex;flex-wrap:wrap;gap:16px;font-weight:600;font-size:15px}
+.also{margin-top:8px;padding:24px 28px;border-radius:24px;border:1px dashed var(--line);display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px;align-items:center}
+.also h3{font-size:24px;font-weight:800;letter-spacing:-.02em;margin:0 0 6px}
+.also p{margin:0;color:var(--muted);max-width:var(--measure)}
+
+/* ship & measure */
+.measure{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px}
+.panel{padding:28px;border-radius:24px;border:1px solid var(--line);background:var(--bg-2)}
+.panel h3{margin:0 0 14px;font-size:22px;font-weight:800;letter-spacing:-.02em}
+.panel ul{margin:0;padding-left:20px}
+.panel li{margin-bottom:10px}
+.panel.next{background:linear-gradient(160deg,#1b1840,#121029);border-color:#3a3170}
+.panel.next p{margin:0 0 12px}
+.badge{display:inline-block;font-size:13px;font-weight:600;padding:4px 10px;border-radius:999px;background:rgba(25,230,255,.12);color:var(--brand);margin-bottom:12px}
+
+/* how I work */
+.how{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:36px 48px}
+.how h3{font-size:22px;font-weight:800;letter-spacing:-.02em;margin:0 0 8px}
+.how p{margin:0;color:#D6D2EE;max-width:52ch}
+
+/* journey */
+.timeline{list-style:none;margin:0;padding:0;border-left:2px solid var(--line)}
+.timeline li{position:relative;padding:0 0 34px 28px;max-width:calc(var(--measure) + 160px)}
+.timeline li::before{content:"";position:absolute;left:-7px;top:8px;width:12px;height:12px;border-radius:50%;background:var(--bg);border:2px solid var(--brand)}
+.timeline .when{font-weight:600;color:var(--brand);font-size:15px}
+.timeline h3{margin:2px 0 6px;font-size:21px;font-weight:800;letter-spacing:-.015em}
+.timeline p{margin:0;color:#D6D2EE}
+
+/* skills */
+.skills{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px 36px}
+.skills h3{font-size:17px;font-weight:700;margin:0 0 8px}
+.skills p{margin:0;color:var(--muted);font-size:16px}
+
+/* contact */
+.contact{padding:88px 0 56px;border-top:1px solid var(--line)}
+.contact h2{font-size:clamp(40px,7vw,88px)}
+.contact p{color:var(--muted);font-size:19px;max-width:48ch;margin:0 0 28px}
+.contact .actions{justify-content:flex-start}
+footer{padding:28px 0 40px;color:#7d78a0;font-size:14px}
+
+@media (max-width:900px){
+  .nav ul{display:none}
+  .hero-row{grid-template-columns:1fr;gap:22px}
+  .actions{justify-content:flex-start}
+  .game,.game.wide{grid-template-columns:1fr;gap:24px;padding:20px}
+  .game:not(.wide) .media{max-width:240px;margin-inline:auto}
+  .measure,.how{grid-template-columns:1fr}
+  .skills{grid-template-columns:1fr 1fr}
+  .also{grid-template-columns:1fr}
+  section{padding:56px 0}
+}
+@media (max-width:560px){
+  body{font-size:16px}
+  .hero h1{white-space:normal;font-size:clamp(46px,15vw,72px)}
+  .skills{grid-template-columns:1fr}
+  .game::before{background:radial-gradient(400px 260px at 50% 0%,color-mix(in srgb,var(--accent) 16%,transparent),transparent 70%)}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<a class="skip" href="#work">Skip to the games</a>
+
+<div class="wrap">
+  <nav class="nav" aria-label="Main">
+    <a class="mark" href="#top">Muskan Chauhan</a>
+    <ul>
+      <li><a href="#work">Games</a></li>
+      <li><a href="#measure">Shipping &amp; data</a></li>
+      <li><a href="#journey">Journey</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero" id="top">
+    <h1>Muskan Chauhan</h1>
+    <div class="hero-row">
+      <p class="lede">Game developer. <span>Building your next game obsession through tight mechanics, cool game feel, and killer effects.</span></p>
+      <div class="actions">
+        <a class="btn primary" href="assets/Muskan_Chauhan_Resume.pdf" download>Download resume</a>
+        <a class="btn" href="mailto:muskan.chauhan.work@gmail.com">Email me</a>
+        <a class="btn" href="https://www.linkedin.com/in/muskan-chauhan-1234576m" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://github.com/muskanmeta" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+    <div class="reel">
+      <video id="reel" poster="assets/reel-poster.jpg" autoplay muted loop playsinline controls preload="metadata"
+        aria-label="Gameplay reel: Hungry Shadow, Tunnel Escape, Shadow Jump, Bit Bounce, Chess Gambit and Neon Bricks"></video>
+    </div>
+  </header>
+</div>
+
+<main>
+<section id="work">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Games I've worked on</h2>
+      <p>Five games for BattleBucks' multi-game Android platform, plus two of my own: one built solo and one co-developed. Each entry says what I did on it.</p>
+    </div>
+
+    <div class="games">
+      <article class="game wide" style="--accent:#FF6B4A">
+        <div class="media"><video data-src="assets/clips/hungry.mp4" poster="assets/clips/hungry.jpg" muted loop playsinline preload="none" aria-label="Hungry Shadow gameplay"></video></div>
+        <div class="info">
+          <h3>Hungry Shadow</h3>
+          <p class="kind">2D action brawler for BattleBucks, Android</p>
+          <p class="role">Solo developer: gameplay programming, combat and enemy AI, game feel</p>
+          <ul class="points">
+            <li>Combat runs on a state machine covering standing, crouch, air and weapon combos. An input buffer drops stale inputs, so fast taps never fire late or the wrong way.</li>
+            <li>8 enemy types built on one shared AI base, with knockback, knock-up and air juggles, plus weapon drops the player can catch and throw.</li>
+            <li>Hit-stop, combo-synced camera shake, pooled VFX and custom shaders, with Spine animation blended to the knockback.</li>
+            <li>A steady 80–90 FPS on mid-range Android: pooling, preloaded audio and shader variants, no per-frame allocations.</li>
+          </ul>
+          <ul class="tools"><li>Unity (C#)</li><li>Spine 2D</li><li>Feel</li><li>Addressables</li><li>Custom shaders</li></ul>
+        </div>
+      </article>
+
+      <article class="game wide" style="--accent:#3DF5A0">
+        <div class="media"><video data-src="assets/clips/tunnel.mp4" poster="assets/clips/tunnel.jpg" muted loop playsinline preload="none" aria-label="Tunnel Escape gameplay"></video></div>
+        <div class="info">
+          <h3>Tunnel Escape</h3>
+          <p class="kind">Hypercasual tunnel runner for BattleBucks, Android</p>
+          <p class="role">Gameplay, optimization and VFX, through to launch</p>
+          <ul class="points">
+            <li>Optimized the game for mobile and fixed gameplay bugs on the way to release.</li>
+            <li>Updated the art assets and the VFX.</li>
+          </ul>
+          <ul class="tools"><li>Unity (C#)</li><li>Particle systems</li><li>Mobile profiling</li></ul>
+        </div>
+      </article>
+
+      <article class="game" style="--accent:#4FC3F7">
+        <div class="media"><video data-src="assets/clips/sjump.mp4" poster="assets/clips/sjump.jpg" muted loop playsinline preload="none" aria-label="Shadow Jump gameplay"></video></div>
+        <div class="info">
+          <h3>Shadow Jump</h3>
+          <p class="kind">2D arcade platformer for BattleBucks, Android</p>
+          <p class="role">Gameplay mechanics, game feel and shaders</p>
+          <ul class="points">
+            <li>15+ custom Feel feedbacks for jump, double jump, landing, dash, trail and death. Landings scale with how hard the player hits the ground.</li>
+            <li>A URP sprite shader that leans the character from the feet up on spring motion. It uses MaterialPropertyBlocks, so sprites still batch.</li>
+            <li>Rebuilt the player animation as an event-driven system: gameplay never references effects directly, so feedback can be retuned without risking gameplay bugs.</li>
+            <li>Reworked the double jump, swapped physics colliders for a custom capsule check for fairer sawblade hits, and added a fixed-aspect camera.</li>
+          </ul>
+          <ul class="tools"><li>Unity (C#)</li><li>Feel</li><li>URP shaders</li><li>Animator</li></ul>
+        </div>
+      </article>
+
+      <article class="game" style="--accent:#FFA24C">
+        <div class="media"><video data-src="assets/clips/bit.mp4" poster="assets/clips/bit.jpg" muted loop playsinline preload="none" aria-label="Bit Bounce gameplay"></video></div>
+        <div class="info">
+          <h3>Bit Bounce</h3>
+          <p class="kind">Arcade orbit game for BattleBucks, Android</p>
+          <p class="role">Gameplay polish and game feel</p>
+          <ul class="points">
+            <li>Polished the core mechanics and fixed gameplay bugs.</li>
+            <li>Tuned the game feel so every action reads clearly on screen.</li>
+            <li>Updated art and fixed sound effects across the game.</li>
+          </ul>
+          <ul class="tools"><li>Unity (C#)</li><li>Game feel</li><li>Audio</li></ul>
+        </div>
+      </article>
+
+      <article class="game" style="--accent:#2EE6C8">
+        <div class="media"><video data-src="assets/clips/chess.mp4" poster="assets/clips/chess.jpg" muted loop playsinline preload="none" aria-label="Chess Gambit gameplay"></video></div>
+        <div class="info">
+          <h3>Chess Gambit</h3>
+          <p class="kind">Head-to-head mini chess for BattleBucks, Android</p>
+          <p class="role">Tech art and VFX</p>
+          <ul class="points">
+            <li>Built the board and capture effects with custom shaders and particle systems.</li>
+          </ul>
+          <ul class="tools"><li>Shaders</li><li>Particle systems</li><li>Unity (C#)</li></ul>
+        </div>
+      </article>
+
+      <article class="game" style="--accent:#19E6FF">
+        <div class="media"><video data-src="assets/clips/neon.mp4" poster="assets/clips/neon.jpg" muted loop playsinline preload="none" aria-label="Neon Bricks gameplay"></video></div>
+        <div class="info">
+          <h3>Neon Bricks</h3>
+          <p class="kind">Hypercasual brick breaker, my own game, Android and WebGL</p>
+          <p class="role">Solo developer: design, code, ads and retention analytics</p>
+          <ul class="points">
+            <li>Built in Unity 6 on State Machine, Observer and Strategy patterns, following SOLID.</li>
+            <li>50 data-driven levels in ScriptableObjects, kept light with object pooling and MaterialPropertyBlocks.</li>
+            <li>AdMob rewarded and interstitial ads behind my own service interface.</li>
+            <li>A Firebase Analytics event plan to track retention and level difficulty.</li>
+          </ul>
+          <ul class="tools"><li>Unity 6</li><li>Firebase Analytics</li><li>AdMob</li><li>ScriptableObjects</li></ul>
+          <p class="links">
+            <a href="https://almostagamer.itch.io/" target="_blank" rel="noopener">Play on itch.io</a>
+            <a href="https://play.google.com/store/apps/details?id=com.muskan.neonbrick" target="_blank" rel="noopener">Google Play (closed beta)</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="game wide" style="--accent:#FFC83D">
+        <div class="media"><video data-src="assets/clips/grim.mp4" poster="assets/clips/grim.jpg" muted loop playsinline preload="none" aria-label="Grim gameplay and menu screens"></video></div>
+        <div class="info">
+          <h3>Grim</h3>
+          <p class="kind">4-player online arena shooter, co-developed, live on Google Play</p>
+          <p class="role">Gameplay programming, game feel and VFX, and the full game UI</p>
+          <ul class="points">
+            <li>Weapons that can be picked up and thrown (pistol, assault rifle, shotgun, sniper, grenade) on one shared weapon base, with recoil and aim assist. The server decides every grab, so two players never take the same weapon.</li>
+            <li>Combat feedback built with Feel: hit-stop on kills, camera punches, squash and stretch, and touch feedback on the combat buttons. VFX come from a pooled, capped system, so busy 4-player fights stay smooth on phones.</li>
+            <li>Designed and built the full menu flow: home hub, hero gallery and mastery, daily rewards, chests, missions, friends and chat. Each screen talks to the backend through an interface, so services can be swapped without touching the UI.</li>
+            <li>Co-developed with one other developer, each owning separate modules, integrated through feature branches and code reviews.</li>
+          </ul>
+          <ul class="tools"><li>Unity 6 (C#)</li><li>Photon Fusion</li><li>Unity Gaming Services</li><li>Feel</li><li>UI</li></ul>
+          <p class="links">
+            <a href="https://play.google.com/store/apps/details?id=com.pixamentory.grim" target="_blank" rel="noopener">Get it on Google Play</a>
+            <a href="assets/grim-trailer.mp4" target="_blank" rel="noopener">Watch the trailer</a>
+          </p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="measure">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Shipping and measuring</h2>
+      <p>Building a game is half the job. On Neon Bricks I own the rest too: the release, the ads and the numbers that say what to change next.</p>
+    </div>
+    <div class="measure">
+      <div class="panel">
+        <h3>What's live in Neon Bricks</h3>
+        <ul>
+          <li>Analytics events planned before launch, around retention and where players get stuck.</li>
+          <li>Difficulty sits in level data, so it can be retuned without touching code.</li>
+          <li>Ads sit behind an interface, so placements and networks can change without touching gameplay.</li>
+          <li>Released on Google Play in closed beta. <a href="mailto:muskan.chauhan.work@gmail.com?subject=Neon%20Bricks%20beta">Email me</a> to be added as a tester.</li>
+        </ul>
+      </div>
+      <div class="panel next">
+        <span class="badge">In progress</span>
+        <h3>Next: Neon becomes a physics platformer</h3>
+        <p>I'm rebuilding Neon as a physics platformer, with retention analytics planned from the first build: an event plan, BigQuery queries for retention and level funnels, and a dashboard.</p>
+        <p>I'll publish the results here, including one change made from the data and what it did to retention.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="how">
+  <div class="wrap">
+    <div class="sec-head"><h2>How I work</h2></div>
+    <div class="how">
+      <div><h3>Feel first</h3><p>I get the moment-to-moment feel right early: hit-stop, squash and stretch, camera and sound. Then I tune it until it reads well on a small screen.</p></div>
+      <div><h3>Fast on real phones</h3><p>Pooling, batching and allocation-free updates, checked in the profiler on mid-range Android rather than in the editor.</p></div>
+      <div><h3>AI in the loop, my judgment</h3><p>I use AI tools every day to prototype faster, dig into analytics and pick up new tools. I check what they produce in the engine and the profiler before it ships.</p></div>
+      <div><h3>Decide with data</h3><p>Plan the events before launch, read retention and level funnels after it, and change one thing at a time.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="journey">
+  <div class="wrap">
+    <div class="sec-head"><h2>Where I've been</h2></div>
+    <ol class="timeline">
+      <li><span class="when">Sep 2025 – now</span><h3>Unity Developer, BattleBucks</h3><p>Building and shipping games for a multi-game Android platform. Each game is its own module, loaded on demand through Addressables and integrated through an in-house SDK, with difficulty set from the server. Firebase Analytics tracks gameplay events and informs ad placement.</p></li>
+      <li><span class="when">Alongside</span><h3>Personal projects</h3><p>Neon Bricks, built solo. Grim, co-developed with feature branches and code reviews. A 3D multiplayer FPS with Photon PUN.</p></li>
+      <li><span class="when">Jan 2023 – Aug 2025</span><h3>Jr. XR Developer, Simulanis</h3><p>VR training simulators for mobile, Oculus and WebGL, including a hardware-integrated forklift simulator with live performance tracking. Built a cross-platform metaverse pipeline that cut development time by 60%.</p></li>
+      <li><span class="when">2018 – 2022</span><h3>B.Tech, DCRUST, Haryana</h3><p>Plus certifications in Java and multiplayer Unity with Photon PUN 2.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <div class="sec-head"><h2>Toolkit</h2></div>
+    <div class="skills">
+      <div><h3>Gameplay and systems</h3><p>Unity (C#), state machines, Observer and Strategy patterns, ScriptableObject data, Addressables</p></div>
+      <div><h3>Game feel and tech art</h3><p>Feel (MMFeedbacks), Shader Graph and custom URP shaders, particle systems, Spine 2D</p></div>
+      <div><h3>Performance</h3><p>Object pooling, MaterialPropertyBlocks and batching, allocation-free updates, mobile profiling</p></div>
+      <div><h3>Shipping and data</h3><p>Firebase Analytics, AdMob, Google Play releases, Git and GitHub</p></div>
+      <div><h3>Multiplayer</h3><p>Photon Fusion and PUN, Unity Gaming Services</p></div>
+      <div><h3>XR</h3><p>VR simulations for Meta and Pico headsets, WebGL builds</p></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<div class="wrap">
+  <section class="contact" id="contact">
+    <h2>Let's talk</h2>
+    <p>I'm open to gameplay, technical design and game analytics roles. The quickest way to reach me is email.</p>
+    <div class="actions">
+      <a class="btn primary" href="mailto:muskan.chauhan.work@gmail.com">muskan.chauhan.work@gmail.com</a>
+      <a class="btn" href="assets/Muskan_Chauhan_Resume.pdf" download>Download resume</a>
+      <a class="btn" href="https://www.linkedin.com/in/muskan-chauhan-1234576m" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="https://almostagamer.itch.io/" target="_blank" rel="noopener">itch.io</a>
+    </div>
+  </section>
+  <footer>Muskan Chauhan, New Delhi. Footage from games I worked on at BattleBucks and my own projects.</footer>
+</div>
+
+<script>
+(function(){
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var reel = document.getElementById('reel');
+  if (reel) {
+    var narrow = window.matchMedia('(max-width: 600px)').matches;
+    reel.poster = narrow ? 'assets/reel-vertical-poster.jpg' : 'assets/reel-poster.jpg';
+    reel.src = narrow ? 'assets/reel-vertical.mp4' : 'assets/reel.mp4';
+    if (narrow) reel.parentNode.classList.add('vertical');
+  }
+  if (reduce && reel) { reel.removeAttribute('autoplay'); try { reel.pause(); } catch(e){} }
+  var clips = document.querySelectorAll('video[data-src]');
+  function load(v){ if (!v.src) { v.src = v.dataset.src; } }
+  if (!('IntersectionObserver' in window)) { clips.forEach(function(v){ load(v); if(!reduce) v.play().catch(function(){}); }); return; }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      var v = e.target;
+      if (e.isIntersecting) { load(v); if (!reduce) v.play().catch(function(){}); }
+      else if (!v.paused) { v.pause(); }
+    });
+  }, { rootMargin: '200px 0px', threshold: 0.15 });
+  clips.forEach(function(v){
+    io.observe(v);
+    if (reduce) { v.setAttribute('controls',''); }
+  });
+})();
+</script>
+</body>
+</html>
